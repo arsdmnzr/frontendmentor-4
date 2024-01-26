@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import desk from './desk.svg';
+import star from './star.svg'
+import minus from './minus.svg';
+import plus from './plus.svg';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="main">
+    
+      <img src={desk} alt='background'/>
+      <div className='container'>
+      <div className='box'>
+      <div className='faq'>  <img src={star} alt='star'/>
+        <h1>FAQs</h1></div>
+        <div className='flex'><p>what is Frontend Mentor, and how will it help me?</p>
+        <img src={minus} alt='minus'/></div>
+        <p className='para'>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML,
+          CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='flex'><p>Is Frontend Mentor free?</p><img src={plus} alt='plus'/></div>
+        <div className='flex'><p>Can I use Frontend Mentor projects in my portfolio?</p><img src={plus} alt='plus'/></div>
+        <div className='flex'><p>How can I get help if I'm stuck on a challenge?</p><img src={plus} alt='plus'/></div>
+      </div>
+     </div>
     </div>
   );
 }
